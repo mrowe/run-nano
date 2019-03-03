@@ -1,0 +1,27 @@
+{
+    "LaunchTemplateVersions": [
+        {
+            "LaunchTemplateId": "lt-05a372600195d97d6",
+            "LaunchTemplateName": "workspace",
+            "VersionNumber": 6,
+            "VersionDescription": "A playground workspace with weechat and sshd:443",
+            "CreateTime": "2019-03-02T04:07:07.000Z",
+            "CreatedBy": "arn:aws:iam::618408050778:root",
+            "DefaultVersion": true,
+            "LaunchTemplateData": {
+                "ImageId": "ami-07a3bd4944eb120a0",
+                "InstanceType": "t3.nano",
+                "KeyName": "mojain",
+                "InstanceInitiatedShutdownBehavior": "terminate",
+                "UserData": "IyEvYmluL2Jhc2gKZWNobyAiUG9ydCAyMiIgPj4gL2V0Yy9zc2gvc3NoZF9jb25maWcKZWNobyAiUG9ydCA0NDMiID4+IC9ldGMvc3NoL3NzaGRfY29uZmlnCnN5c3RlbWN0bCByZXN0YXJ0IHNzaC5zZXJ2aWNlCmFwdC1nZXQgdXBkYXRlCmFwdC1nZXQgaW5zdGFsbCAteSB3ZWVjaGF0IHRtdXgKCmNhdCA8PCBFT0YgPiAvaG9tZS91YnVudHUvLnRtdXguY29uZgpzZXQgLWcgcHJlZml4IEMtegp1bmJpbmQgQy1iCmJpbmQgQy16IHNlbmQtcHJlZml4CmJpbmQgQy1kIGRldGFjaAoKc2V0IC1nIHN0YXR1cy1iZyBibHVlCnNldCAtZyBzdGF0dXMtZmcgd2hpdGUKc2V0IC1nIHN0YXR1cy1sZWZ0ICcjW2ZnPWdyZWVuXSNIJwpzZXQgLWcgc3RhdHVzLXJpZ2h0ICcjVCcKCnNldC13aW5kb3ctb3B0aW9uIC1nIHdpbmRvdy1zdGF0dXMtY3VycmVudC1iZyBtYWdlbnRhCgpzZXQgLWcgc3RhdHVzLXJpZ2h0ICcjKGNhdCAvcHJvYy9sb2FkYXZnKScKCm5ldyAtZCAtbiAnc2hlbGwnCm5ld3cgLWQgLW4gd2VlY2hhdCAnd2VlY2hhdCcKCiMgbGVhdmUgbWUgaW4gdGhlIGZpcnN0IHdpbmRvdwpzZWxlY3Qtd2luZG93IC10MApFT0Y=",
+                "SecurityGroupIds": [
+                    "sg-3854e55e",
+                    "sg-6a7c6b0d"
+                ],
+                "InstanceMarketOptions": {
+                    "MarketType": "spot"
+                }
+            }
+        }
+    ]
+}
