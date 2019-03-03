@@ -28,13 +28,16 @@ default region. If you're running more than the one created above I
 assume you can figure out how to find the right IP yourself. :-D
 
 
-# Manual steps
+# Manual steps to config weechat
 
- * Start weechat, then quit it. 
- * Edit ~/.weechat/irc.conf to add irccloud server section. 
- * Edit ~/.weechat/weechat.conf to add :
+I haven't tried to script the configuration of `weechat` because it's
+haaaarrdddd. So, you'll need to do these parts manually if you are
+using weechat:
 
-```
-[startup]
-command_after_plugins = "/buffer ##badattitude"
-```
+ * Start weechat, then quit it. [this creates the default config]
+ * Edit ~/.weechat/irc.conf to add a server section. 
+
+If you really wanted to automate this, the easiest way is probably to
+create a working config dir (`~/.weechat/`), tar it up and drop it
+into S3. Then you could add a few lines of user data script to
+download and expand it.
