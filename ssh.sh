@@ -1,1 +1,1 @@
-ssh -i ~/.ssh/mojain-ap-southeast-2.pem -t ubuntu@$(./find-ip.sh) tmux attach
+ssh -i ~/.ssh/mojain-ap-southeast-2.pem -p 1443 -t ubuntu@localhost tmux attach
