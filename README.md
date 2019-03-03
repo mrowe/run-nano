@@ -34,8 +34,8 @@ I haven't tried to script the configuration of `weechat` because it's
 haaaarrdddd. So, you'll need to do these parts manually if you are
 using weechat:
 
- * Start weechat, then quit it. [this creates the default config]
- * Edit ~/.weechat/irc.conf to add a server section. 
+ * Start `weechat`, then quit it. [this creates the default config]
+ * Edit `~/.weechat/irc.conf` to add a server section for your server 
 
 If you really wanted to automate this, the easiest way is probably to
 create a working config dir (`~/.weechat/`), tar it up and drop it
