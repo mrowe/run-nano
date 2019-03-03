@@ -1,0 +1,36 @@
+{
+  "IamFleetRole": "arn:aws:iam::618408050778:role/aws-ec2-spot-fleet-tagging-role",
+  "AllocationStrategy": "lowestPrice",
+  "TargetCapacity": 1,
+  "SpotPrice": "0.0066",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-07a3bd4944eb120a0",
+      "InstanceType": "t3.nano",
+      "SubnetId": "subnet-346f5842, subnet-0884826c, subnet-b93258e0",
+      "KeyName": "mojain",
+      "SpotPrice": "0.0066",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/sda1",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-3854e55e"
+        },
+        {
+          "GroupId": "sg-6a7c6b0d"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gKYXB0LWdldCB1cGRhdGUKYXB0LWdldCBpbnN0YWxsIC15IHN0dW5uZWwgd2VlY2hhdCB0bXV4CgojIHNldCB1cCBzdHVubmVsCmNhdCA8PEVPRiA+IC90bXAvY2VydC5jbmYKWyByZXEgXQpwcm9tcHQgPSBubwpkaXN0aW5ndWlzaGVkX25hbWUgPSBkbgpbIGRuIF0KQyA9IEFVCk8gPSBBY21lCkNOID0gc2VydmVyCkVPRgoKY2F0IDw8IEVPRiA+IC9ldGMvc3R1bm5lbC9zdHVubmVsLmNvbmYKcGlkID0gL3Zhci9ydW4vc3R1bm5lbC5waWQKY2VydCA9IC9ldGMvc3R1bm5lbC9zdHVubmVsLnBlbQpbc3NoXQphY2NlcHQgPSAqOjQ0Mwpjb25uZWN0ID0gMTI3LjAuMC4xOjIyCkVPRgoKc2VkIC1pICdzL15FTkFCTEVEPTAvRU5BQkxFRD0xLycgIC9ldGMvZGVmYXVsdC9zdHVubmVsNAoKb3BlbnNzbCBnZW5yc2EgMTAyNCA+IC90bXAvc3R1bm5lbC5rZXkKb3BlbnNzbCByZXEgLW5ldyBcCiAgICAgICAgLWtleSAvdG1wL3N0dW5uZWwua2V5IFwKICAgICAgICAteDUwOSBcCiAgICAgICAgLWRheXMgMTAwMCBcCiAgICAgICAgLW91dCAvdG1wL3N0dW5uZWwuY3J0IFwKICAgICAgICAtY29uZmlnIC90bXAvY2VydC5jbmYKY2F0IC90bXAvc3R1bm5lbC5jcnQgL3RtcC9zdHVubmVsLmtleSA+IC9ldGMvc3R1bm5lbC9zdHVubmVsLnBlbQoKc2xlZXAgMgpzZXJ2aWNlIHN0dW5uZWw0IHJlc3RhcnQKCiMgc2V0IHVwIHRtdXgKCmNhdCA8PCBFT0YgPiAvaG9tZS91YnVudHUvLnRtdXguY29uZgpzZXQgLWcgcHJlZml4IEMtegp1bmJpbmQgQy1iCmJpbmQgQy16IHNlbmQtcHJlZml4CmJpbmQgQy1kIGRldGFjaAoKc2V0IC1nIHN0YXR1cy1iZyBibHVlCnNldCAtZyBzdGF0dXMtZmcgd2hpdGUKc2V0IC1nIHN0YXR1cy1sZWZ0ICcjW2ZnPWdyZWVuXSNIJwpzZXQgLWcgc3RhdHVzLXJpZ2h0ICcjVCcKCnNldC13aW5kb3ctb3B0aW9uIC1nIHdpbmRvdy1zdGF0dXMtY3VycmVudC1iZyBtYWdlbnRhCgpzZXQgLWcgc3RhdHVzLXJpZ2h0ICcjKGNhdCAvcHJvYy9sb2FkYXZnKScKCm5ldyAtZCAtbiAnc2hlbGwnCm5ld3cgLWQgLW4gd2VlY2hhdCAnd2VlY2hhdCcKCiMgbGVhdmUgbWUgaW4gdGhlIGZpcnN0IHdpbmRvdwpzZWxlY3Qtd2luZG93IC10MApFT0YK"
+    }
+  ],
+  "Type": "request"
+}

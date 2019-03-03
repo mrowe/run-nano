@@ -8,9 +8,10 @@ LTS 18.04, so you might also want to play with that.
 # To use
 
 Create the launch template from `launch-template.json`, updating
-security group ids as required (mine allow `ssh` on ports 22 and 443
-from anywhere). Update `nano-spot-request.json` with the template id
-and version, and set the subnets to match your VPC. Then run:
+security group ids as required (mine allow `ssh` on ports 22 and
+stunnel on 443 from anywhere). Update `spot-request.json` with the
+template id and version, and set the subnets to match your VPC. Then
+run:
 
 ```
 ./launch.sh
@@ -26,6 +27,31 @@ to get your instance's public IP address. *NOTE* obviously this will
 return public IPs for _all_ instances running in your account in your
 default region. If you're running more than the one created above I
 assume you can figure out how to find the right IP yourself. :-D
+
+
+## User data script
+
+If you change `user-data.sh` you will need to base64 encode it and
+drop that string into `spot-request.json`.
+
+# Setting up stunnel
+
+
+Install `stunnel4` (e.g. `brew install stunnel`). Edit
+`stunnel-client.conf` with the path to this key, and the IP address of
+your server, then start stunnel:
+
+```
+stunnel stunnel-client.conf
+```
+
+You should now be able to ssh over the tunnel like:
+
+```
+ssh -p 1443 localhost
+```
+
+(specifying users and identity files as required).
 
 
 # Manual steps to config weechat
